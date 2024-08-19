@@ -1,0 +1,95 @@
+@import "contact";
+@import "footer";
+@import "about";
+@import "projects";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lexend Deca", sans-serif;
+  background: #111111;
+  color: white;
+  overflow-x: hidden;
+}
+
+.home-page {
+  color: white;
+  height: 80vh;
+  .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img {
+    height: 30vh;
+  }
+  .image {
+    width: 500px;
+    padding: 75px 90px;
+    @media screen and (max-width: 920px) {
+      padding: 40px 130px;
+    }
+    @media screen and (max-width: 420px) {
+      padding: 70px 160px;
+    }
+  }
+  .left {
+    border: 3px solid#29f3c3;
+    width: 88vw;
+    height: 32vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 3rem;
+      font-weight: 100;
+    }
+    #sub-heading {
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (max-width: 920px) {
+      h2 {
+        font-size: 30px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .links {
+    height: 25vh;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .link {
+      padding: 50px;
+      font-size: 35px;
+      span {
+        color: #29f3c3;
+      }
+    }
+    @media screen and (max-width: 920px) {
+      .link {
+        font-size: 24px;
+        padding: 18px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .link {
+        font-size: 16px;
+        padding: 20px 10px;
+      }
+    }
+  }
+}
